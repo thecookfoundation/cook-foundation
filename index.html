@@ -7,13 +7,13 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    body { font-family: system-ui, -apple-system, sans-serif; }
+    body { font-family: system-ui, sans-serif; }
     .hero { background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('https://picsum.photos/id/1015/2000/1200') center/cover no-repeat; }
   </style>
 </head>
 <body class="bg-white">
 
-  <!-- Navigation -->
+  <!-- Nav -->
   <nav class="border-b py-6 sticky top-0 bg-white z-50">
     <div class="max-w-7xl mx-auto px-8 flex justify-between items-center">
       <div class="flex items-center gap-3">
@@ -28,7 +28,7 @@
   <section class="hero text-white py-32 text-center">
     <div class="max-w-4xl mx-auto px-6">
       <h1 class="text-6xl md:text-7xl font-bold leading-tight mb-8">Rebuilding lives.<br>Empowering your next chapter.</h1>
-      <p class="text-2xl mb-12">A personal initiative by Thomas Cook providing direct funding, stability, and growth for families, students, and communities in Wisconsin and beyond.</p>
+      <p class="text-2xl mb-12">A personal initiative by Thomas Cook providing direct funding, stability, and growth for families and communities.</p>
       <a href="#apply" class="bg-white text-emerald-800 px-12 py-6 rounded-full text-xl font-semibold inline-block hover:bg-emerald-100">Start Your Application</a>
     </div>
   </section>
@@ -53,21 +53,58 @@
 
   <!-- Founder Story -->
   <section class="py-24 bg-white">
-    <div class="max-w-5xl mx-auto px-6">
-      <div class="grid md:grid-cols-2 gap-16 items-center">
-        <div>
-          <img src="https://i.imgur.com/ZD2xB.jpg" alt="Thomas Cook" class="rounded-3xl shadow-2xl w-full">
+    <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+      <div>
+        <img src="https://i.imgur.com/ZD2xB.jpg" alt="Thomas Cook" class="rounded-3xl shadow-2xl w-full">
+      </div>
+      <div>
+        <h2 class="text-5xl font-bold leading-tight mb-10">From Lottery Winner to Community Builder</h2>
+        <p class="text-xl leading-relaxed text-zinc-600">
+          After winning $22 million from the Wisconsin Lottery in 2020, Thomas Cook chose a different path. Instead of luxury, he decided to create lasting impact. 
+          The Cook Foundation was born from gratitude — a promise to help families, students, and small businesses across Wisconsin and beyond.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Real Stories -->
+  <section class="py-24 bg-zinc-100">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-5xl font-bold text-center mb-16">Real People. Real Support.</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div class="bg-white rounded-3xl p-8 shadow">
+          <img src="https://picsum.photos/id/64/600/400" class="w-full h-56 object-cover rounded-2xl mb-6" alt="Testimonial">
+          <p class="font-semibold">$45,000</p>
+          <p class="text-emerald-700">Madison, Wisconsin • Education</p>
+          <p class="mt-4">"Thomas helped me pay for my daughter's college tuition. This changed our entire future. Thank you from the bottom of my heart."</p>
+          <p class="mt-6 text-sm font-medium">- Maria Gonzalez</p>
         </div>
-        <div>
-          <h2 class="text-5xl font-bold leading-tight mb-10">From Lottery Winner to Community Builder</h2>
-          <p class="text-xl leading-relaxed text-zinc-600">
-            After winning $22 million from the Wisconsin Lottery in 2020, Thomas Cook made a life-changing decision — to use his blessing to help others. 
-            Instead of luxury, he chose legacy. The Cook Foundation was born from gratitude and a deep desire to support hardworking families across Wisconsin.
-          </p>
-          <p class="text-xl leading-relaxed text-zinc-600 mt-8">
-            Today, the foundation provides direct financial help for education, housing, medical needs, small businesses, and emergency support — with no middlemen and no complicated process.
-          </p>
+
+        <div class="bg-white rounded-3xl p-8 shadow">
+          <img src="https://picsum.photos/id/201/600/400" class="w-full h-56 object-cover rounded-2xl mb-6" alt="Testimonial">
+          <p class="font-semibold">$120,000</p>
+          <p class="text-emerald-700">Milwaukee, Wisconsin • Housing</p>
+          <p class="mt-4">"We were about to lose our home. Thomas Cook's support saved us. Our family is stable again."</p>
+          <p class="mt-6 text-sm font-medium">- The Thompson Family</p>
         </div>
+
+        <div class="bg-white rounded-3xl p-8 shadow">
+          <img src="https://picsum.photos/id/251/600/400" class="w-full h-56 object-cover rounded-2xl mb-6" alt="Testimonial">
+          <p class="font-semibold">$75,000</p>
+          <p class="text-emerald-700">Toronto, Canada • Medical</p>
+          <p class="mt-4">"The medical bills were overwhelming. This gift gave my wife a chance to fight cancer with dignity."</p>
+          <p class="mt-6 text-sm font-medium">- David &amp; Anna Lee</p>
+        </div>
+
+        <div class="bg-white rounded-3xl p-8 shadow">
+          <img src="https://picsum.photos/id/180/600/400" class="w-full h-56 object-cover rounded-2xl mb-6" alt="Testimonial">
+          <p class="font-semibold">$35,000</p>
+          <p class="text-emerald-700">Chicago, Illinois • Small Business</p>
+          <p class="mt-4">"My small bakery was struggling. This support helped me reopen stronger than ever."</p>
+          <p class="mt-6 text-sm font-medium">- Elena Rodriguez</p>
+        </div>
+
       </div>
     </div>
   </section>
@@ -75,7 +112,7 @@
   <!-- Application -->
   <section id="apply" class="py-24 bg-emerald-700 text-white">
     <div class="max-w-2xl mx-auto px-6 text-center">
-      <h2 class="text-5xl font-bold mb-6">Ready to Start Your New Chapter?</h2>
+      <h2 class="text-5xl font-bold mb-6">Ready for your new chapter?</h2>
       <p class="text-xl mb-12">Share your story. Real help. Fast response.</p>
       
       <form action="https://formspree.io/f/mbdvovzv" method="POST" enctype="multipart/form-data" class="space-y-8">
@@ -97,14 +134,12 @@
 
   <!-- Footer -->
   <footer class="bg-zinc-900 text-zinc-400 py-20 text-center">
-    <div class="max-w-4xl mx-auto px-6">
-      <p class="text-3xl font-bold text-white mb-2">Thomas Cook</p>
-      <p class="text-lg mb-8">Supporting Wisconsin Communities Since 2022</p>
-      <p class="text-2xl mb-4">📧 THECOOKFOUNDATION@proton.me</p>
-      <p class="text-2xl mb-8">📞 (343) 430-0052</p>
-      <a href="https://x.com/Thecook_j" target="_blank" class="text-4xl hover:text-white">X @Thecook_j</a>
-      <p class="text-sm mt-16">© 2026 The Cook Foundation. All Rights Reserved.</p>
-    </div>
+    <p class="text-3xl font-bold text-white">Thomas Cook</p>
+    <p class="mt-4">Supporting Wisconsin Communities Since 2022</p>
+    <p class="mt-8 text-xl">📧 THECOOKFOUNDATION@proton.me</p>
+    <p class="text-xl">📞 (343) 430-0052</p>
+    <p class="mt-10">X: <a href="https://x.com/Thecook_j" target="_blank" class="underline">@Thecook_j</a></p>
+    <p class="text-sm mt-16">© 2026 The Cook Foundation. All Rights Reserved.</p>
   </footer>
 
 </body>

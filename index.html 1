@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Cook Foundation | Wisconsin Giveaways</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body { font-family: system-ui, -apple-system, sans-serif; }
+    .hero { background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://picsum.photos/id/1015/2000/1200'); background-size: cover; background-position: center; }
+  </style>
+</head>
+<body class="bg-gray-50">
+
+  <!-- Navigation -->
+  <nav class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <i class="fa-solid fa-hand-holding-heart text-4xl text-emerald-600"></i>
+        <div>
+          <h1 class="text-2xl font-bold text-emerald-700">The Cook Foundation</h1>
+          <p class="text-xs text-gray-500 -mt-1">Wisconsin</p>
+        </div>
+      </div>
+      <div class="flex gap-8 text-lg">
+        <a href="#mission" class="hover:text-emerald-600">Mission</a>
+        <a href="#programs" class="hover:text-emerald-600">Programs</a>
+        <a href="#get-help" class="hover:text-emerald-600">Get Help</a>
+        <a href="#donate" class="hover:text-emerald-600">Donate</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero text-white py-40 text-center">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-5xl md:text-6xl font-bold mb-6">Helping Wisconsin Families Thrive</h2>
+      <p class="text-2xl mb-10">Free giveaway programs for students, households, businesses, and individuals across Wisconsin.</p>
+      <a href="#get-help" class="bg-white text-emerald-700 px-10 py-5 rounded-full text-xl font-bold inline-block hover:bg-gray-100">
+        Apply for Help
+      </a>
+    </div>
+  </section>
+
+  <!-- Mission -->
+  <section id="mission" class="py-20 bg-white text-center">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-4xl font-bold mb-6">Our Mission</h2>
+      <p class="text-xl text-gray-600">
+        The Cook Foundation provides essential resources and giveaways to support students, households, 
+        local businesses, and individuals throughout Wisconsin.
+      </p>
+    </div>
+  </section>
+
+  <!-- Programs -->
+  <section id="programs" class="py-20 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12">What We Provide</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="bg-white p-8 rounded-2xl shadow text-center">
+          <i class="fa-solid fa-graduation-cap text-5xl text-emerald-600 mb-4"></i>
+          <h3 class="font-semibold text-xl">Students</h3>
+          <p>School supplies, backpacks, and learning resources</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow text-center">
+          <i class="fa-solid fa-house-user text-5xl text-emerald-600 mb-4"></i>
+          <h3 class="font-semibold text-xl">Households</h3>
+          <p>Food, clothing, furniture &amp; essentials</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow text-center">
+          <i class="fa-solid fa-briefcase text-5xl text-emerald-600 mb-4"></i>
+          <h3 class="font-semibold text-xl">Businesses</h3>
+          <p>Startup supplies and growth resources</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow text-center">
+          <i class="fa-solid fa-user text-5xl text-emerald-600 mb-4"></i>
+          <h3 class="font-semibold text-xl">Individuals</h3>
+          <p>Emergency aid and personal support</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Get Help -->
+  <section id="get-help" class="py-24 bg-emerald-700 text-white text-center">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-4xl font-bold mb-6">Need Assistance?</h2>
+      <p class="text-xl mb-10">If you live in Wisconsin and need help, apply for our giveaway programs today.</p>
+      <a href="#" class="bg-white text-emerald-700 px-12 py-6 rounded-full text-2xl font-bold">Apply Now</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-12 text-center">
+    <p class="text-2xl font-semibold text-white mb-2">The Cook Foundation</p>
+    <p>Wisconsin • Empowering Communities Through Giving</p>
+    <p class="mt-6">Email: info@thecookfoundation.org</p>
+    <p class="text-sm mt-10">© 2026 The Cook Foundation</p>
+  </footer>
+
+</body>
+</html>

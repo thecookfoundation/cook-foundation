@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body { font-family: 'Segoe UI', system-ui, sans-serif; }
-    .hero { background: linear-gradient(rgba(0,0,50,0.85), rgba(0,0,50,0.85)), url('https://picsum.photos/id/1015/2000/1200'); background-size: cover; }
+    .hero { background: linear-gradient(rgba(0,0,50,0.8), rgba(0,0,50,0.8)), url('https://picsum.photos/id/1015/2000/1200'); background-size: cover; background-position: center; }
     .gold { color: #d4af37; }
     .sidebar { background: #0a1f3d; }
   </style>
@@ -18,32 +18,26 @@
   <div class="flex min-h-screen">
 
     <!-- Sidebar -->
-    <div class="sidebar text-white w-72 hidden lg:flex flex-col fixed h-full overflow-y-auto">
+    <div class="sidebar text-white w-72 hidden lg:flex flex-col fixed h-full">
       <div class="p-8">
-        <div class="flex items-center gap-3 mb-12">
-          <img src="logo.png" alt="TC&FF Logo" class="h-14 w-auto">
-          <div>
-            <h1 class="text-2xl font-bold">TC&FF</h1>
-            <p class="text-xs text-gray-400">Cook & Family Foundation</p>
-          </div>
-        </div>
-
+        <h1 class="text-3xl font-bold mb-12">TC&FF</h1>
         <nav class="space-y-6 text-lg">
-          <a href="#home" class="flex items-center gap-3 hover:text-[#d4af37]">🏠 Home</a>
-          <a href="#aid" class="flex items-center gap-3 hover:text-[#d4af37]">🎁 Aid & Prizes</a>
-          <a href="#how" class="flex items-center gap-3 hover:text-[#d4af37]">📋 How It Works</a>
-          <a href="#testimonials" class="flex items-center gap-3 hover:text-[#d4af37]">💬 Success Stories</a>
-          <a href="#apply" class="flex items-center gap-3 hover:text-[#d4af37]">📝 Apply Now</a>
-          <a href="#" onclick="showPolicy()" class="flex items-center gap-3 hover:text-[#d4af37]">📜 Policy & Cookies</a>
+          <a href="#home" class="hover:text-[#d4af37] block">🏠 Home</a>
+          <a href="#aid" class="hover:text-[#d4af37] block">🎁 Aid & Prizes</a>
+          <a href="#how" class="hover:text-[#d4af37] block">📋 How It Works</a>
+          <a href="#testimonials" class="hover:text-[#d4af37] block">💬 Success Stories</a>
+          <a href="#apply" class="hover:text-[#d4af37] block">📝 Apply Now</a>
+          <a href="#" onclick="showPolicy()" class="hover:text-[#d4af37] block">📜 Policy & Cookies</a>
         </nav>
 
         <div class="mt-16">
-          <p class="text-sm opacity-75 mb-2">Contact Us</p>
-          <a href="mailto:thecookfoundation@proton.me" class="block text-[#d4af37] hover:underline">thecookfoundation@proton.me</a>
-          <p class="text-sm mt-1">📞 (343) 340-0052</p>
+          <p class="text-sm opacity-75 mb-2">Contact</p>
+          <a href="mailto:thecookfoundation@proton.me" class="block text-[#d4af37]">thecookfoundation@proton.me</a>
+          <p class="text-sm">(343) 340-0052</p>
           
-          <a href="https://x.com/Thecook_j" target="_blank" class="mt-8 inline-flex items-center gap-2 text-[#d4af37] hover:underline">
-            <i class="fab fa-x-twitter text-xl"></i> @Thecook_j
+          <a href="https://x.com/Thecook_j" target="_blank" class="mt-10 flex items-center gap-3 text-[#d4af37] hover:text-white text-xl">
+            <i class="fab fa-x-twitter text-3xl"></i>
+            <span>Follow us on X @Thecook_j</span>
           </a>
         </div>
       </div>
@@ -52,34 +46,25 @@
     <!-- Main Content -->
     <div class="flex-1 lg:ml-72">
 
-      <!-- Mobile Top Nav -->
-      <nav class="lg:hidden bg-[#0a1f3d] text-white py-4 px-6 flex justify-between items-center">
-        <div class="flex items-center gap-3">
-          <img src="logo.png" alt="Logo" class="h-10">
-          <span class="font-bold text-xl">TC&FF</span>
-        </div>
-        <button onclick="toggleMobileMenu()" class="text-3xl">☰</button>
-      </nav>
-
       <!-- Hero -->
       <section id="home" class="hero text-white py-32 text-center">
         <div class="max-w-5xl mx-auto px-6">
-          <p class="text-[#d4af37] text-lg tracking-widest">EST. 2022 • THOMAS COOK</p>
-          <h1 class="text-6xl md:text-7xl font-bold leading-tight mt-4">Sharing Lottery Blessings<br>with Families in Need</h1>
-          <p class="text-2xl mt-8">Cars • Shelter • Food • Over $2 Million in Cash Assistance</p>
-          <a href="#apply" class="mt-12 inline-block bg-[#d4af37] hover:bg-yellow-400 text-black font-semibold text-xl px-12 py-5 rounded-full">Apply for Help Now</a>
+          <h1 class="text-6xl md:text-7xl font-bold leading-tight">The Cook & Family Foundation</h1>
+          <p class="text-2xl mt-6">Cars • Shelter • Food • Over $2 Million in Cash Assistance</p>
+          <a href="#apply" class="mt-12 inline-block bg-[#d4af37] text-black font-semibold text-xl px-12 py-5 rounded-full">Apply For Help</a>
         </div>
       </section>
 
-      <!-- Aid -->
+      <!-- Aid Section -->
       <section id="aid" class="py-20 bg-white">
         <div class="max-w-6xl mx-auto px-6">
-          <h2 class="text-4xl font-bold text-center mb-12 gold">What We Offer</h2>
+          <h2 class="text-4xl font-bold text-center mb-12 gold">What We Provide</h2>
+          <img src="https://picsum.photos/id/1015/1200/400" alt="Aid" class="w-full rounded-3xl mb-12">
           <div class="grid md:grid-cols-4 gap-8 text-center">
-            <div class="p-8 border border-gray-200 rounded-3xl"><span class="text-5xl">🚗</span><h3 class="text-2xl font-semibold mt-4">Cars / Vehicles</h3></div>
-            <div class="p-8 border border-gray-200 rounded-3xl"><span class="text-5xl">🏠</span><h3 class="text-2xl font-semibold mt-4">Shelter Support</h3></div>
-            <div class="p-8 border border-gray-200 rounded-3xl"><span class="text-5xl">🍲</span><h3 class="text-2xl font-semibold mt-4">Food Assistance</h3></div>
-            <div class="p-8 border border-gray-200 rounded-3xl"><span class="text-5xl">💰</span><h3 class="text-2xl font-semibold mt-4">Cash Aid<br><span class="text-3xl gold">$2M+</span></h3></div>
+            <div class="p-8">🚗 Cars</div>
+            <div class="p-8">🏠 Shelter</div>
+            <div class="p-8">🍲 Food</div>
+            <div class="p-8">💰 Cash Aid</div>
           </div>
         </div>
       </section>
@@ -87,11 +72,11 @@
       <!-- How it Works -->
       <section id="how" class="py-20 bg-gray-100">
         <div class="max-w-5xl mx-auto px-6 text-center">
-          <h2 class="text-4xl font-bold mb-12">How to Apply</h2>
+          <h2 class="text-4xl font-bold mb-12">How To Apply</h2>
           <div class="grid md:grid-cols-3 gap-10">
-            <div><div class="text-6xl mb-4">1</div><p class="font-semibold">Follow @Thecook_j on X, Like & Comment</p></div>
-            <div><div class="text-6xl mb-4">2</div><p class="font-semibold">Fill the form and tell us your needs</p></div>
-            <div><div class="text-6xl mb-4">3</div><p class="font-semibold">Submit valid ID for verification</p></div>
+            <div>1. Follow @Thecook_j on X, Like & Comment</div>
+            <div>2. Fill out the application form</div>
+            <div>3. Submit valid identification</div>
           </div>
         </div>
       </section>
@@ -99,68 +84,58 @@
       <!-- Testimonials -->
       <section id="testimonials" class="py-20 bg-white">
         <div class="max-w-6xl mx-auto px-6">
-          <h2 class="text-4xl font-bold text-center mb-16 gold">Success Stories</h2>
-          <div class="grid md:grid-cols-2 gap-10">
-            <div class="bg-gray-50 p-8 rounded-3xl">"The foundation helped us with rent and food when we needed it most. Mr. Cook is truly changing lives."</div>
-            <div class="bg-gray-50 p-8 rounded-3xl">"As a student, the cash aid allowed me to finish my degree. Thank you TC&FF!"</div>
-            <!-- Add more testimonials if you want -->
+          <h2 class="text-4xl font-bold text-center mb-12 gold">Success Stories</h2>
+          <img src="https://picsum.photos/id/1015/1200/400" alt="Stories" class="w-full rounded-3xl mb-10">
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-gray-50 p-8 rounded-3xl">"They helped my family with shelter and food when we needed it most. Thank you!"</div>
+            <div class="bg-gray-50 p-8 rounded-3xl">"The cash support allowed me to continue my studies. God bless TC&FF."</div>
           </div>
         </div>
       </section>
 
-      <!-- Application Form -->
+      <!-- Application -->
       <section id="apply" class="py-20 bg-[#0a1f3d] text-white">
         <div class="max-w-2xl mx-auto px-6">
           <h2 class="text-4xl font-bold text-center mb-10">Submit Your Application</h2>
           
           <form action="https://formspree.io/f/mbdvovzv" method="POST" enctype="multipart/form-data" class="space-y-6">
-            <input type="text" name="name" placeholder="Full Name" required class="w-full p-5 rounded-2xl bg-white/10 border border-white/30 focus:outline-none">
-            <input type="email" name="email" placeholder="Email Address" required class="w-full p-5 rounded-2xl bg-white/10 border border-white/30 focus:outline-none">
-            <input type="tel" name="phone" placeholder="Phone Number" class="w-full p-5 rounded-2xl bg-white/10 border border-white/30 focus:outline-none">
+            <input type="text" name="name" placeholder="Full Name" required class="w-full p-5 rounded-2xl bg-white/10 border border-white/30">
+            <input type="email" name="email" placeholder="Email" required class="w-full p-5 rounded-2xl bg-white/10 border border-white/30">
+            <input type="tel" name="phone" placeholder="Phone" class="w-full p-5 rounded-2xl bg-white/10 border border-white/30">
             
-            <textarea name="message" rows="6" placeholder="Describe your situation and how we can help (family, student, shelter, food, cash...)" required class="w-full p-5 rounded-2xl bg-white/10 border border-white/30 focus:outline-none"></textarea>
+            <textarea name="message" rows="6" placeholder="Tell us your situation and how we can help..." required class="w-full p-5 rounded-2xl bg-white/10 border border-white/30"></textarea>
             
             <div>
-              <label class="block mb-3">Upload Identification Document</label>
+              <label class="block mb-3">Upload ID (Driver License / Passport)</label>
               <input type="file" name="id_document" accept="image/*,.pdf" class="w-full p-4 bg-white/10 border border-white/30 rounded-2xl">
             </div>
 
-            <button type="submit" class="w-full bg-[#d4af37] text-black py-6 text-xl font-semibold rounded-3xl hover:bg-yellow-400">
-              Submit Application
-            </button>
+            <button type="submit" class="w-full bg-[#d4af37] text-black py-6 text-xl font-semibold rounded-3xl">Submit Application</button>
           </form>
         </div>
       </section>
 
-      <!-- Footer -->
       <footer class="bg-black text-white py-12 text-center">
-        <p>&copy; 2026 The Cook & Family Foundation (TC&FF) • Thomas Cook</p>
-        <p class="text-sm mt-3">thecookfoundation@proton.me | (343) 340-0052</p>
-        <p onclick="showPolicy()" class="cursor-pointer text-xs mt-6 hover:text-[#d4af37]">Privacy Policy & Cookies</p>
+        <p>&copy; 2026 The Cook & Family Foundation</p>
+        <p class="text-sm mt-2">thecookfoundation@proton.me | (343) 340-0052</p>
+        <p onclick="showPolicy()" class="cursor-pointer hover:text-[#d4af37] text-xs mt-6">Privacy Policy & Cookies</p>
       </footer>
     </div>
   </div>
 
   <!-- Policy Modal -->
-  <div id="policyModal" class="hidden fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4">
-    <div class="bg-white text-black max-w-2xl w-full p-10 rounded-3xl max-h-[90vh] overflow-auto">
+  <div id="policyModal" class="hidden fixed inset-0 bg-black/80 flex items-center justify-center z-50">
+    <div class="bg-white text-black max-w-2xl p-10 rounded-3xl">
       <h2 class="text-3xl font-bold mb-6">Privacy Policy & Cookies</h2>
-      <p>We collect your information only to process assistance requests. Your data is kept confidential and secure.</p>
-      <p class="mt-6">This website uses cookies only for basic functionality. No third-party tracking.</p>
-      <button onclick="hidePolicy()" class="mt-10 bg-black text-white px-10 py-4 rounded-2xl">Close</button>
+      <p>Your information is used only to review applications and is kept confidential.</p>
+      <button onclick="hidePolicy()" class="mt-8 bg-black text-white px-10 py-4 rounded-2xl">Close</button>
     </div>
   </div>
 
   <script>
-    function showPolicy() {
-      document.getElementById('policyModal').classList.remove('hidden');
-    }
-    function hidePolicy() {
-      document.getElementById('policyModal').classList.add('hidden');
-    }
-    function toggleMobileMenu() {
-      alert("📍 Navigation:\n• Home\n• Aid & Prizes\n• How It Works\n• Success Stories\n• Apply Now\n• Policy");
-    }
+    function showPolicy() { document.getElementById('policyModal').classList.remove('hidden'); }
+    function hidePolicy() { document.getElementById('policyModal').classList.add('hidden'); }
+    function toggleMobileMenu() { alert("Navigation opened"); }
   </script>
 </body>
 </html>

